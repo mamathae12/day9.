@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Times New Roman", Georgia, Serif; 
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 30px;
+            background-color: #a6a2a2;
+            color: white;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 100%;
+             margin: 20px 0; 
+        }
+
+        
+        .content-section1, .content-section2 {
+            flex: 1;
+            padding: 20px;
+            font-size: 20px;
+            flex-basis: 100%;
+            letter-spacing: 2px;
+            
+        }
+        .image-section1, .image-section2 {
+            flex: 1; 
+            height: auto;
+            max-width: 100%;
+            flex-basis: 100%;
+            margin-left: 10px;
+        }
+        
+       
+       
+
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.contact-form button {
+   
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+
+</style>
+
+    
+</head>
+<body>
+    <div class="header">
+        <h2>Gourmet au catering</h2>
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <div class="image-section">
+                <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Home Image">
+            </div>
+        </div>
+
+        
+        <div class="section" id="about">
+            <div class="content-section1">
+                <h1 align="center">About Catering</h1><br>
+                <h6 align="center">Tradition since 1889</h6><br>
+                <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in 
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients
+                </p><br><br>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     </p>
+            </div>
+            <div class="image-section1">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="About Image">
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <div class="section" id="menu">
+            <div class="image-section2">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="Menu Image">
+            </div>
+            <div class="content-section2">
+                <h2 align="center">Our Menu</h2>
+                <h5>Bread Basket</h5><br>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                <h5>Honey Almond Granola with Fruits</h5><br>
+                <p>Natural cereal of honey toasted oats, raisins, almonds, and dates 7.00</p><br>
+                <h5>Belgian Waffle</h5><br>
+                <p>Vanilla flavored batter with malted flour 7.50</p><br>
+                <h5>Scrambled eggs</h5><br>
+                <p>Scrambled eggs, roasted red pepper, and garlic, with green onions 7.50</p><br>
+                <h5>Blueberry Pancakes</h5><br>
+                <p>With syrup, butter, and lots of berries 8.50</p><br>
+
+            </div>
+            </div>
+            <!-- Contact Section -->
+<div class="contact-section" id="contact">
+    <h1>Contact Us</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and will
+         cater the food to satisfy both look and taste.</p><br>
+    
+    
+        <div class="contact-info">
+            <p><strong>Address:</strong> Catering Service, 42nd Living St, 43043 New York, NY</p><br>
+            <p><strong>Phone:</strong> 00553123-2323</p><br>
+            <p><strong>Email:</strong> catering@catering.com</p><br>
+        </div>
+        <br>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" name="Name" ><br><br>
+            <input type="number" placeholder="Number of People" name="People" ><br><br>
+            <input type="date" name="date"><br><br>
+            <textarea placeholder="Message / Special Requests" name="Message" ></textarea><br><br>
+            <button type="submit">Send Message</button><br><br>
+        </form>
+    </div>
+</div>
+           
+  </div>
+  
+
+        </div>
+
+    </div>
+</body>
+</html>
